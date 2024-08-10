@@ -1,0 +1,6 @@
+docker pull mysql:latest
+docker pull phpmyadmin:latest
+
+#docker network
+docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=12345 -p 5432:3306 --network gedess -v mysql-data:/var/lib/mysql mysql:latest
+docker run -d --name phpmyadmin-container --network gedess -e PMA_HOST=mysql-container -p 8080:80 phpmyadmin:latest
