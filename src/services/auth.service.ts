@@ -20,7 +20,7 @@ class AuthService {
 
     async register(user: any): Promise<any> {
         const userexists = await userRepository.searchUserByEmail(user.email);
-        if (userexists===!undefined) {
+        if (userexists!==undefined) {
             throw {
                 message: "Ya se encuentra registrado un usuario con ese correo",
                 status: 400

@@ -10,7 +10,8 @@ class AlertRouter {
     }
 
     init() {
-        this.router.get('/', this.alertController.getAlerts);
+        this.router.get('/:iduser', this.alertController.getAlertsByUser);
+        this.router.post('/', this.alertController.saveAlert);
     }
 
 }

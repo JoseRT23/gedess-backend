@@ -2,14 +2,14 @@ import alertRepository from "../repository/alert.repository";
 
 class AlertService {
 
-    async getAlerts(): Promise<any> {
-        const alerts = await alertRepository.getAlerts();
+    async getAlertsByUser(iduser: string): Promise<any> {
+        const alerts = await alertRepository.getAlertsByUser(iduser);
         return alerts;
     }
 
     async saveAlert(alert: any): Promise<any> {
-        const alerts = await alertRepository.saveAlert(alert);
-        return alerts;
+        const newalert = await alertRepository.saveAlert(alert);
+        return newalert;
     }
 }
 
