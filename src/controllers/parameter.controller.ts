@@ -31,7 +31,7 @@ export class ParameterController {
 
     async updateParameter(req: Request, res: Response) {
         try {
-          const idparameter = req.params;
+          const { idparameter } = req.params;
           const parameter = req.body;
           const updatedparameter = await parameterService.updateParameter(idparameter, parameter);
           res.status(200).send(updatedparameter);

@@ -2,8 +2,8 @@ import { createPool } from "mysql2/promise";
 
 export const pool = createPool({
     host: 'localhost',
-    port: 5432,
-    database: 'gedess-db',
+    port: 3306,
+    database: 'test',
     user: 'root',
-    password: '12345'
+    password: 'test123'
 });

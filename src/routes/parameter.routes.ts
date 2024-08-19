@@ -12,7 +12,7 @@ class ParameterRouter {
     init() {
         this.router.get('/:iduser', this.parameterController.getParametersByUser);
         this.router.post('/', this.parameterController.saveParameter);
-        this.router.put('/:iduser', this.parameterController.updateParameter);
+        this.router.put('/:idparameter', this.parameterController.updateParameter);
     }
 
 }
