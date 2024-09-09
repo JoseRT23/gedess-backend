@@ -20,7 +20,7 @@ class UserRepository {
             user.password,
             user.cellphone
         ]);
-        const [lastInserted] = await pool.query('SELECT username, email, cellphone FROM user WHERE id = LAST_INSERT_ID();') as any;
+        const [lastInserted] = await pool.query('SELECT id, username, email, cellphone FROM user WHERE id = LAST_INSERT_ID();') as any;
         return lastInserted;
     }
 }
