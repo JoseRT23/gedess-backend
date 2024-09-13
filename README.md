@@ -74,7 +74,8 @@ Para ejecutar el proyecto se puede realizar con el siguiente comando.
 ```
 
 Luego de ejecutarlos el proyecto estará corriendo en la siguiente url: http://localhost:3000/api/
-## Features
+
+## Características
 
 - SocketIO para comunicación en tiempo real.
 - Typescript.
