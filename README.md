@@ -6,7 +6,7 @@ Proyecto desarrollado con la versión 20.15.1 de NodeJS, para el grupo de estudi
 ```bash
 ├── README.md
 ├── fonts
-|  └── Fuentes necesarias para generar pdf's
+|  └── Fuentes necesarias para generar pdfs
 ├── src
 |  └── controllers
 |      └── Son los encargados de recibir las peticiones que se realizan a la API
