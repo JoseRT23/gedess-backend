@@ -3,6 +3,29 @@
 
 Proyecto desarrollado con la versión 20.15.1 de NodeJS, para el grupo de estudio GEDESS (Grupo de estudio de soluciones de software).
 
+```bash
+├── README.md
+├── fonts
+|  └── Fuentes necesarias para generar pdf's
+├── src
+|  └── controllers
+|      └── Son los encargados de recibir las peticiones que se realizan a la API
+|  └── db
+|      └── Conección a la base de datos
+|  └── libs
+|      └── Librerias instaladas para el funcionamiento del código
+|  └── middlewares
+|      └── Funciones que interactuan con las peticiones a la API
+|  └── repository
+|      └── En esta carpeta estan todas las consultas a la DB
+|  └── routes
+|      └── En esta carpeta estan las rutas que exponen la aplicación hacia internet
+|  └── services
+|      └── En esta carpeta esta toda la logica de la aplicación
+|  └── app.js Es el punto de inicio de la aplicación
+└── .env Variables de entorno
+```
+
 ## Instalación
 
 Crear base de datos y sus respectivas tablas con los siguientes comandos SQL.
